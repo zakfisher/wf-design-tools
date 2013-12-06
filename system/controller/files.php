@@ -1,12 +1,11 @@
 <?php
 class FilesController {
 
-    private $centreMap = array(
-        'centurycity' => 'Century City 2',
-        'sanfrancisco' => 'SFC 2'
-    );
+    private $centreMap;
 
-    function __construct() {}
+    function __construct($map) {
+        $this->centreMap = $map;
+    }
 
     // Return array of files from specified directory
     public function getFilesFromDir($dir) {

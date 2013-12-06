@@ -8,6 +8,11 @@ define(SERVER, '/Users/zakfisher');
 define(ROOT, '/Documents/Projects/Westfield/');
 define(STOREFRONTS, '/Box Sync/Redesign Website & Unify Mobile App/Images and Content/Website/3-Shop/3.1.1 Shop Details/Images/Production/');
 
+$centreMap = array(
+    'centurycity' => 'Century City',
+    'sanfrancisco' => 'SFC'
+);
+
 /** Connect to Database */
 //require_once('system/connect.php');
 
@@ -29,7 +34,7 @@ require_once('system/utilities/text.php');
 
 /** Controllers **/
 require_once('system/controller/files.php');
-$files = new FilesController();
+$files = new FilesController($centreMap);
 
 /** Launch **/
 $tpl = new Savant3();
