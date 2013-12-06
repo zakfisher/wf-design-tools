@@ -1,0 +1,72 @@
+@import 'config/mixins';
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+// Navigation
+[role=navigation] {
+   @include border-radius(0);
+}
+
+.page {
+   margin: 20px;
+}
+
+.nav-tabs {
+   clear:both;
+   margin:25px 0 15px;
+}
+
+.breadcrumb {
+   margin-top: 20px;
+}
+
+h2 {
+   margin-bottom: 20px;
+}
+
+#batch-rename-storefronts,
+#manually-rename-storefronts {
+   select[name=centre], a.btn {
+      margin-top: 20px;
+   }
+}
+
+#manually-rename-storefronts {
+   div.img {
+      clear: left;
+   }
+   img {
+      max-width: 100%;
+   }
+   div.well {
+      h4 {
+         text-align: center;
+      }
+   }
+   form {
+      a {
+         margin: 0 !important;
+      }
+   }
+}
+
+// Only Extra Small
+@media (max-width: 668px) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 668px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

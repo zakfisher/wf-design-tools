@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Public URLs
+#RewriteRule ^$ /tools/public/ [L]
+#RewriteRule ^about public/about.php
