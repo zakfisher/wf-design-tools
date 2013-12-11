@@ -34,7 +34,11 @@ WFTools = new function() {
             $('input[name=new_filename]').val($('h4.new-filename').text());
         };
         _this.submitForm = function() {
-            if ($('form button[type=submit]').is('[disabled]')) return false;
+            console.log('form submit');
+            if ($('form button[type=submit]').is('[disabled]')) {
+                console.log('button disabled');
+                return false;
+            }
             else $('form').submit();
         };
         _this.init = function() {
