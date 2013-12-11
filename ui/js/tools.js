@@ -33,11 +33,18 @@ WFTools = new function() {
             $('h4.new-filename').find('span.retail-chain-id').text(option.attr('data-retail-chain-id')).siblings('span.retailer-id').text(option.attr('data-retailer-id'));
             $('input[name=new_filename]').val($('h4.new-filename').text());
         };
+        _this.submitForm = function() {
+            if ($('form button[type=submit]').is('[disabled]')) return false;
+            else $('form').submit();
+        };
         _this.init = function() {
             $('a.not-renamed').text('Not Renamed (' + $('table.not-renamed tbody tr').length + ')');
             $('a.renamed').text('Renamed (' + $('table.renamed tbody tr').length + ')');
             $(document).on('change', centreSelect, _this.toggleViewCentreBtnHref);
             $(document).on('change', retailerSelect, _this.toggleNewName);
+            $(document).on('keydown', document, function(e) {
+                if (e.keyCode == 13) _this.submitForm();
+            });
         };
     };
     $(function() {
