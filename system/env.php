@@ -1,13 +1,12 @@
 <?php
-define(SERVER, '/Users/zakfisher');
-define(ROOT, '/Documents/Projects/Westfield/tools/');
-define(STOREFRONTS, '/Box Sync/Redesign Website & Unify Mobile App/Images and Content/Website/3-Shop/3.1.1 Shop Details/Images/Production/');
-
+define(SERVER, '/Users/andywest1200');
+define(ROOT, '/Labs Local/wf-design-tools/');
+define(STOREFRONTS, '/Labs Local/US Storefront Photography Renamed/');
 define(FILENAME_CHAR, '_');
 $centreMap = array(
-    'centurycity' => 'Century City',
+    'centurycity' => 'Century City/800 X 800',
     'sanfrancisco' => 'SFC',
-    /*'annapolis' => 'Annapolis/640x300',
+    'annapolis' => 'Annapolis/640x300',
     'annapolis' => 'Annapolis/800x800',
     'plazabonita' => 'Bonita Plaza/640x300',
     'plazabonita' => 'Bonita Plaza/800x800',
@@ -18,8 +17,8 @@ $centreMap = array(
 	'centurycity' => 'Century City/800x800',
 	'connecticutpost' => 'Conneticut post/640x300',
 	'connecticutpost' => 'Conneticut post/800x800',
-	'culvercity' => 'Culver City/800x800',
 	'culvercity' => 'Culver City/640x300',
+	//'culvercity' => 'Culver City/800x800',
 	'fashionsquare' => 'Fashion Square/800x800',
 	'galleriaatroseville' => 'Galleria at Roseville/640x300',
 	'galleriaatroseville' => 'Galleria at Roseville/800x800',
@@ -30,6 +29,7 @@ $centreMap = array(
 	'meriden' => 'Meriden/800x800',
 	'meriden' => 'Meriden/640x300',
 	'missionvalley' => 'Mission Valley/800x800',
+	'missionvalley' => 'Mission Valley/640x300',
 	'montgomery' => 'Montgomery/800x800',
 	'montgomery' => 'Montgomery/640x300',
 	'northcounty' => 'North County/800x800',
@@ -61,5 +61,5 @@ $centreMap = array(
 	'vancouver' => 'VANCOUVER/640x300',
 	'vancouver' => 'VANCOUVER/800x800',
 	'wheaton' => 'Wheaton/640x300',
-	'wheaton' => 'Wheaton/800x800',*/
-);
+	'wheaton' => 'Wheaton/800x800',
+    );
