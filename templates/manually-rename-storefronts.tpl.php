@@ -43,7 +43,7 @@
                 <input type="hidden" name="new_filename" value="" />
             </div>
             <button type="submit" name="submit" class="btn btn-success pull-left" disabled>Rename</button>
-            <a class="btn btn-default pull-right" href="?task=manually-rename-storefronts&centre=<?=$this->centre?>&offset=<?=$this->offset?>" style="margin-right:10px;">Next Image</a>
+            <a class="btn btn-default pull-left" href="?task=manually-rename-storefronts&centre=<?=$this->centre?>&offset=<?=$this->offset?>" style="margin-right:10px;">Next Image</a>
         </form>
         <hr />
         <h4>New Name</h4>
