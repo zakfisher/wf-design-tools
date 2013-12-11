@@ -17,8 +17,8 @@
 
     <!-- Stats -->
     <ol class="breadcrumb pull-right">
-        <li><b><?=count($this->storefronts)?></b> rows remaining</li>
-        <li><b><?=count($this->files)?></b> files unchanged</li>
+        <li><b><?=count($this->storefronts)?></b> retailers remaining</li>
+        <li><b><?=count($this->files)?></b> images to rename</li>
     </ol>
 
     <?php if (count($this->files) === 0): ?>

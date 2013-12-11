@@ -16,7 +16,8 @@ if (isset($_GET['task'])) {
             $tpl->centre = $centre;
             $tpl->storefronts = $files->getStorefrontImagesFromCentre(SERVER . $sourceFolder, $centre, $rename);
             $tpl->files = $files->getFilesFromDir(SERVER . $sourceFolder);
-            $tpl->centres = $files->listAvailableCentres();
+            if (empty($sourceFolder)) $tpl->files = array();
+            $tpl->centres = $files->listAllCentres();
             break;
 
         case 'manually-rename-storefronts':

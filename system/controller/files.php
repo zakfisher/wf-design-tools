@@ -23,7 +23,7 @@ class FilesController {
 
     // Get storefront data from txt file (should be replaced with API call or direct DB access)
     public function extractStorefrontsFromTxt($centre = '') {
-        $file = file_get_contents(SERVER . ROOT . 'tools/storefronts.txt');
+        $file = file_get_contents(SERVER . ROOT . 'storefronts.txt');
         $file = explode("\n", $file);
         unset($file[0]);
         unset($file[1]);
