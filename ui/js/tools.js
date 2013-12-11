@@ -34,12 +34,11 @@ WFTools = new function() {
             $('input[name=new_filename]').val($('h4.new-filename').text());
         };
         _this.submitForm = function() {
-            console.log('form submit');
-            if ($('form button[type=submit]').is('[disabled]')) {
-                console.log('button disabled');
+            var submitBtn = $('form button[type=submit]');
+            if (submitBtn.is('[disabled]')) {
                 return false;
             }
-            else $('form').submit();
+            else submitBtn.click();
         };
         _this.init = function() {
             $('a.not-renamed').text('Not Renamed (' + $('table.not-renamed tbody tr').length + ')');
