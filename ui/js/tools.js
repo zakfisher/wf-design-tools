@@ -41,6 +41,7 @@ WFTools = new function() {
             else submitBtn.click();
         };
         _this.init = function() {
+            $(retailerSelect).focus();
             $('a.not-renamed').text('Not Renamed (' + $('table.not-renamed tbody tr').length + ')');
             $('a.renamed').text('Renamed (' + $('table.renamed tbody tr').length + ')');
             $(document).on('change', centreSelect, _this.toggleViewCentreBtnHref);
