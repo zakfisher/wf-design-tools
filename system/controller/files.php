@@ -59,7 +59,7 @@ class FilesController {
 
         // Check for prefix matches and files already renamed
         foreach ($files as $file) {
-            $file = explode('_', $file);
+            $file = explode(FILENAME_CHAR, $file);
             $name = $file[0];
             foreach ($storefronts as $i => $s) {
 
