@@ -64,8 +64,8 @@ class FilesController {
             foreach ($storefronts as $i => $s) {
 
                 // Check for row match against file
-                if ($name === $storefronts[$i]['prefix']) {
-                    $storefronts[$i]['sourcefile'] = implode('_', $file);
+                if (strtolower($name) === $storefronts[$i]['prefix']) {
+                    $storefronts[$i]['sourcefile'] = implode(FILENAME_CHAR, $file);
                     $storefronts[$i]['matches']++;
                 }
 
